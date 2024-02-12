@@ -8,6 +8,7 @@ function parque_de_diversiones(){
         else{
             console.log("Lo siento, chico. Tal vez el próximo año");
         }
+
         muestraSiElNiñoPuedeSubirALaMontañaRusa();
     }
 }  

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JuegoNaves</title>
+</head>
+<body>
+    <style type="text/css">
+        #ocean{
+            background-image: url(/academy-airplane-master/cuantos-azules-tiene-el-cielo-289011-2_1280.webp);
+            width: 900px;
+            height: 700px;
+        }
+        .player{
+            position: absolute;
+            background-image: url(/academy-airplane-master/player.png); 
+            width: 70px;
+            height: 75px;
+        }
+        .enemy{
+            position: absolute;
+            background-image: url(/academy-airplane-master/enemy.png);
+            width: 70px;
+            height: 75px;
+        }
+        .missile {
+            position: absolute;
+            background-color: black;
+            width: 5px;
+            height: 10px;
+        }
+    </style>
+    <div id="ocean"> 
+        <div id='players'></div>
+        <div id="enemies"></div>
+        <div id="missiles"></div>
+    </div>
+
+    <script type="text/javascript">
+        var player = {
+            left: 450,
+            top: 620,
+        }
+
+        var enemy = [
+            {left: 350, top: 200},
+            {left: 450, top: 250},
+            {left: 250, top: 200},
+            {left: 600, top: 100},
+        ]
+
+        var missiles = [];
+
+        function drawPlayer() {
+            content="<div class ='player' style='left:"+player.left+"px; top:"+player.top+"px'></div>";
+            document.getElementById("players").innerHTML = content;
+        }
+
+        function drawEnemies() {
+            var content = "";
+            for (var idx = 0; idx < enemy.length; idx++) {
+                content += "<div class ='enemy' style='left:" + enemy[idx].left + "px; top:" + enemy[idx].top + "px'></div>";
+            }
+            document.getElementById("enemies").innerHTML = content;
+        }
+
+        function drawMissiles() {
+            var content = "";
+            for (var i = 0; i < missiles.length; i++) {
+                content += "<div class ='missile' style='left:" + missiles[i].left + "px; top:" + missiles[i].top + "px'></div>";
+            }
+            document.getElementById("missiles").innerHTML = content;
+        }
+
+        function moveEnemies() {
+            for (var i = 0; i < enemy.length; i++) {
+                enemy[i].top += 2; // Ajusta la velocidad del movimiento vertical de los enemigos
+            }
+        }
+
+        function moveMissiles() {
+            for (var i = 0; i < missiles.length; i++) {
+                missiles[i].top -= 5; // Ajusta la velocidad del movimiento vertical de los misiles
+            }
+        }
+
+        function gameLoop() {
+            moveEnemies();
+            moveMissiles();
+            drawEnemies();
+            drawMissiles();
+            setTimeout(gameLoop, 30); // Define el tiempo de espera antes de la próxima iteración del bucle de juego
+        }
+
+        drawPlayer();
+        drawEnemies();
+        gameLoop();
+
+        document.onkeydown = function(e){
+            if (e.keyCode == 32) { // Espacio para disparar misiles
+                missiles.push({left: player.left + 32, top: player.top}); // Ajusta la posición inicial del misil según la posición del jugador
+            }
+
+            if(e.keyCode == 38){ //arriba
+                player.top = Math.max(player.top - 10, 460); // Limita el movimiento hacia arriba
+            }
+            if(e.keyCode == 40){ //abajo
+                player.top = Math.min(player.top + 10, 640); // Limita el movimiento hacia abajo
+            }
+
+            if(e.keyCode == 37){//izquierda
+                player.left = Math.max(player.left - 10, 0); // Limita el movimiento hacia la izquierda
+            }
+            if(e.keyCode == 39){ //derecha
+                player.left = Math.min(player.left + 10, 830); // Limita el movimiento hacia la derecha
+            }
+            drawPlayer();
+        }
+    </script>
+</body>
+</html>
