@@ -7,20 +7,91 @@
     <title>Fake Blog</title>
 </head>
 <body>
+
     <h1>Michael Jordan</h1>
+    
     <img src="https://ca-times.brightspotcdn.com/dims4/default/796e6c9/2147483647/strip/true/crop/1970x1108+39+0/resize/1200x675!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F12%2Fa5%2F79e097ccf62312d18a025f22ce48%2Fhoyla-recuento-11-cosas-aman-gatos-top-001" alt="Michael Jordan" width="400" height="200">
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit, debitis iste vel accusantium necessitatibus consectetur. Repellendus expedita ullam officiis mollitia corporis molestiae accusamus atque voluptate! Sed, perferendis placeat! Deserunt.</p>
+    
+    
     <br>
     <table>
-        <tr><!-- -->
-            <td>
-
-            </td>
+        <tr><!--Filas superiores -->
+            <th>Año</th>
+            <th>PPG</th>
+            <th>MVP</th>
+        </tr>
+        <!--Datos de la tabla-->
+        <tr>
+            <td>1990-91</td>
+            <td>31.5</td>
+            <td>Si</td>
+        </tr>
+        <tr>
+            <td>1991-92</td>
+            <td>30.1</td>
+            <td>Si</td>
+        <tr>
+            <td>1992-93</td>
+            <td>32.6</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>1995-96</td>
+            <td>30.4</td>
+            <td>Si</td>
+        </tr>
+        <tr>
+            <td>1996-97</td>
+            <td>29.6</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>1997-98</td>
+            <td>28.7</td>
+            <td>Si</td>
         </tr>
     </table>
     
+    <ul>
+        <li>1984 - 1983 Chicago Bulls</li>
+        <li>1995 - 1998 Chicago Bulls </li>
+        <li>2001 - 2003 Washington Wizards</li>
+    </ul>
 
 
+    <a href="https://www.youtube.com/watch?v=CGbca3HeBq0" target="_blank">Haz click aca por un increible video</a>
+    <br>
+    
+    <!-- Encuesta -->
+    <h2>Por favor, constesta esta breve encuesta</h2>
+    <label for="emailUsuario">Email: </label>
+    <input type="email" name="email" id="emailUsuario">
+    <div>
+        <input type="radio">Si por favor, quiero muchos emails
+        <br>
+        <input type="radio">No gracias
+    </div>
+    <br>
+
+    <!--Donde nos conociste?-->
+    <p>¿Cómo nos conociste?</p>
+    <div>
+        <label for="facebook">Facebook</label>
+        <input type="checkbox" name="DondeNosConociste" id="facebook">
+    </div>
+    <div>
+        <label for="periodico">El periodico</label>
+        <input type="checkbox" name="DondeNosConociste" id="periodico">
+    </div>
+    <div>
+        <label for="contacto">Un contacto</label>
+        <input type="checkbox" name="DondeNosConociste" id="contacto">
+    </div>
+
+    <div>
+        <input type="submit" value="Enviar">
+    </div>
 </body>
 </html>
