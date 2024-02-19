@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: purple;
+    width: 1000px;
+    height: 1500px;
+    margin: 10px auto;
+}
+
+.top{
+    background-color: white;
+    height: 80px;
+    width: 1000px;
+}
+
+.name
+{
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+}
+.titulo{
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    position: relative;
+    left: 500px;
+    
+
+}
+.foto{
+    display: inline-block;
+    border: 3px solid white;
+    margin: 10px;
+    width: 400px;
+    height: 300px;
+}
+
+.about{
+    display: inline;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    left: 450px;
+    bottom: 320px;
+}
+h2, p {
+    padding: 10px;
+}
+
+.aboutitulo{
+    background-color: silver;
+    width: 510px;
+
+}
+
+.textabout{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #BED8DC;
+    width: 510px;
+    height: 240px;
+}
+
+#infocuadros{
+    display: inline-block;
+    background-color: gold;
+    height: 800px;
+    width: 300px;
+    margin: 10px; 
+    position: relative;
+    bottom: 300px;
+    text-align: center;
+}
+
+
+
+
+.lamodefoto, .contactfotos, .fiveElevenfotos{
+    display: block;
+    margin: 10px;
+    height: 200px;
+    width: 250px;
+}
+
+.tecnologiaspng{
+    padding: 3%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.titulos{
+    background-color: red;
+}
+.image{
+    width: 20px;
+    height: 20px;
+}
+.cuadrodeinformacion{
+    margin: 10px;
+}
+.link{ /*Hace referencia a los links de la pagina*/
+    color: black;
+}
+.form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.submit{
+    background-color:#3EA215;
+    border-radius: 30px;
+    width: 120px;
+    height: 30px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2), 0 10px 10px 0 rgba(0,0,0,0.19); 
+}
+.footer{
+    background-color: bisque;
+    display: block;
+    text-align: center;
+    position: relative;
+    bottom: 250px;
+}
+
+
