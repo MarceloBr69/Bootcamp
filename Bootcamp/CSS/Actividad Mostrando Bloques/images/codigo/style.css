@@ -1,0 +1,44 @@
+.container{
+    background-color: beige;
+    height: 500px;
+    width: 800px;
+    
+}
+
+div{
+    border: 3px solid black;
+}
+main{
+    border: 3px solid aqua;
+    height: 500px;
+}
+header{ /*Centrar header*/
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    display: inline-block;
+}
+
+.fototitulo{
+    width: 90px;
+    height: 90px;
+}
+
+    
+.imagenes{ /*Caracteristicas de las fotos*/
+    border: 2px solid black;
+    width: 90px;
+    height: 90px;
+}
+
+#containerfotos{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+    

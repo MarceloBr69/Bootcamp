@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    
+    
+}
+.text{
+    color: white;
+}
+
+.texttop{
+    text-align: center;
+    color: white;
+}
+.container{
+    border: 2px solid blue;
+    background-image: linear-gradient(#245076, #3272a9);
+    flex-wrap: wrap;    
+}
+
+.contenedortop{
+    display: flex;
+    gap: 900px;
+}
+.logo {
+    display: flex;
+    width: 500px;
+    height: 150px;
+}
+.cuadrobuscador{
+    display: flex;
+    justify-content: end;
+    
+}
+
+.buscador{
+    padding: 20px;
+    background-color: #444444;
+    border-radius: 10px;
+}
+.barrabuscador{
+    width: 200px;
+    height: 32px;
+}
+
+button{
+    background-color: #245076;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: -1px -1px white;
+    
+}
+
+.textsize{
+    color: yellow;
+}
+
+
+div{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+
+
+
+.navegacion{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.cuadronav{
+    display: flex;
+    background-color: #457dad;
+    color: white;
+    border-radius: 10px;
+}
+
+.about{
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex: 1
+}
+
+
+
+
+/*            Main                            */
+
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.linkmain{
+    color: white;
+}
+.list{
+    display: flex;  
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+.desciption{
+    display: flex;
+    text-align: center;
+    width: 1000px;
+}
+
+.poema{
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+
+.cuadroinf{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    height: 250px;
+}
+.textinfo{
+    text-align: center;
+    list-style: none;
+    padding: 20px;
+}
+
+.listbox{
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer{
+    color: #6ca0cd;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.Copyrightbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.Copyright{
+    display: flex;
+    
+}
+
+.textCopyright{
+    font-size: 10px;
+    color: white;
+}
+
